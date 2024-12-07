@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -35,8 +37,12 @@ public class Main {
 
         System.out.println("Задача 4");
         char[] names = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = names.length-1; i >=0; i--) {
-            System.out.print(names[i]);
+        int temp;
+        for (int i = 0; i < names.length / 2; i++) {
+            temp = names[i];
+            names[i] = names[names.length - 1 - i];
+            names[names.length - 1 - i] = (char) temp;}
+            System.out.print(names);
         }
     }
-}
+
