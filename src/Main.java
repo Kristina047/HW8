@@ -28,14 +28,15 @@ public class Main {
         int sum1 = 0;
         int sum2 = 0;
         for (int i = 0; i < arr2.length; i++) {
-            sum1+= arr2 [i];
-            sum2 = sum1/arr2.length;
+            sum1 += arr2[i];
+            sum2 = sum1 / arr2.length;
         }
-        System.out.println("Средняя сумма трат за месяц составила "+sum2+" рубля");
+        System.out.println("Средняя сумма трат за месяц составила " + sum2 + " рубля");
 
-
-
-
+        System.out.println("Задача 4");
+        char[] names = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = names.length-1; i >=0; i--) {
+            System.out.print(names[i]);
+        }
     }
 }
-
